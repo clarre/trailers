@@ -1,0 +1,44 @@
+{
+  "name": "trailers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/clarre/trailers.git",
+  "author": "claes.rydell@cryzon.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc --project .",
+    "dev": "nodemon src/index.ts",
+    "dev:debug": "nodemon --inspect src/index.ts ",
+    "lint": "eslint . --ext .js,.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.0.2",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.2",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  }
+}
